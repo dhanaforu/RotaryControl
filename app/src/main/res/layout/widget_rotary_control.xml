@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/rotary_control_container_width"
+    android:layout_height="@dimen/rotary_control_container_height">
+
+    <ImageView
+        android:id="@+id/rotaryControlView"
+        android:layout_width="@dimen/rotary_control_width"
+        android:layout_height="@dimen/rotary_control_height"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/rotaryTooltip"
+        style="@style/RotaryToolTip"
+        android:layout_width="@dimen/rotary_control_tooltip_width"
+        android:layout_height="@dimen/rotary_control_tooltip_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:hint="0" />
+
+</RelativeLayout>

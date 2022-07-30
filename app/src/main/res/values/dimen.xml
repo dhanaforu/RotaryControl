@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rotary_control_width">150dp</dimen>
+    <dimen name="rotary_control_height">150dp</dimen>
+    <dimen name="rotary_control_container_width">220dp</dimen>
+    <dimen name="rotary_control_container_height">220dp</dimen>
+    <dimen name="rotary_control_tooltip_width">100dp</dimen>
+    <dimen name="rotary_control_tooltip_height">30dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="textSmall">12sp</dimen>
+    <dimen name="textMedium">14sp</dimen>
+    <dimen name="textLarge">18sp</dimen>
+
+    <!-- Paddings -->
+    <dimen name="paddingSmall">4dp</dimen>
+    <dimen name="paddingMedium">6dp</dimen>
+    <dimen name="paddingLarge">8dp</dimen>
+    <dimen name="paddingXLarge">16dp</dimen>
+    <dimen name="paddingXXLarge">32dp</dimen>
+    <dimen name="paddingXXXLarge">64dp</dimen>
+</resources>

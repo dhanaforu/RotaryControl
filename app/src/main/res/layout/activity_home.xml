@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_gradient_background"
+    tools:context=".presentation.home.HomeActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/step_control"
+        app:layout_constraintBottom_toTopOf="@id/stepRotaryControl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.dhanapal.rotarycontrol.presentation.widgets.RotaryControlWidget
+        android:id="@+id/stepRotaryControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paddingXXLarge"
+        app:background="@drawable/ic_rotary_control_black"
+        app:initialValue="0"
+        app:layout_constraintBottom_toTopOf="@id/textView2"
+        app:layout_constraintEnd_toEndOf="@id/textView1"
+        app:layout_constraintStart_toStartOf="@id/textView1"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        app:markers="@array/markers"
+        app:maxValue="8"
+        app:minValue="0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/free_control"
+        android:layout_marginTop="@dimen/paddingXXXLarge"
+        app:layout_constraintBottom_toTopOf="@id/freeRotaryControl"
+        app:layout_constraintEnd_toEndOf="@id/stepRotaryControl"
+        app:layout_constraintStart_toStartOf="@id/stepRotaryControl"
+        app:layout_constraintTop_toBottomOf="@id/stepRotaryControl" />
+
+    <com.dhanapal.rotarycontrol.presentation.widgets.RotaryControlWidget
+        android:id="@+id/freeRotaryControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paddingXXLarge"
+        app:background="@drawable/ic_rotary_control_white"
+        app:initialValue="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/textView2"
+        app:layout_constraintStart_toStartOf="@id/textView2"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:maxValue="50"
+        app:minValue="-50" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
